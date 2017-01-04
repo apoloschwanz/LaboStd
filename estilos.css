@@ -1,7 +1,16 @@
 html { height: 100%;
-  background-color: #f5f5b6;
+  background-color: #009688;
+  font-family: "Ostrich Sans",Helvetica,Arial;
 }
-body { height: 100%; 
+@font-face {
+  font-family: "Ostrich Sans";
+  src: url(./fonts/OstrichSans-Black.otf);
+}
+h3 {
+  font-size: 3em;
+  color: #c8fbf6;
+  text-shadow: -3px 3px 3px #666;
+  margin: 120px 0px;
 }
 form { height: 98%; }
 .tablaext {
@@ -17,9 +26,9 @@ form { height: 98%; }
 }
 .tablacert {
   border-collapse: collapse;
-  box-shadow: 0px 0px 8px #000;
+  /*box-shadow: 0px 0px 8px #000;*/
   margin:auto;
-  background-color:#eaeaec;
+  /*background-color:#eaeaec;*/
   width: 98% ;
   height: 98%;	
 }
@@ -81,14 +90,16 @@ form { height: 98%; }
 
 .tabladetnb {
   border-collapse: collapse;
-  margin:20px;
+  width: 100%;
+  text-align: center;
 }
 .tabladetnb th{  
   padding: 5px;
   background-color:#dddddf;	  
 }  
 .tabladetnb td{  
-  padding: 5px;  
+  padding: 5px;
+  width: 100%;  
 }
 .tablavoto {
   border-collapse: collapse;
@@ -123,10 +134,18 @@ form { height: 98%; }
   margin:20px;
 }
 .botonmenu{
-  width:200px;
+  width: 20%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 3px 3px rgba(102, 102, 102, 0.5);
+  background-color: #07a99a;
+  border: none;
+  font-size: 2em;
+  color: #c8fbf6;
+  margin: 20px 0px;
 }
 .tablacampos{
-	border: none ;
+ border: none ;
 }
 .tablacampos td{
   border: none ;

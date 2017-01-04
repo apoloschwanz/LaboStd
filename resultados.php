@@ -84,7 +84,7 @@
 		{
 			//
 			// Arma la página
-			$pagina=new Paginai('Laboratorio','<input type="submit" value="Grabar" name="okGrabaActualizar"><input type="submit" value="Salir" name="cancel">');
+			$pagina=new Paginai('LABORATORIO','<input type="submit" value="Grabar" name="okGrabaActualizar"><input type="submit" value="Salir" name="cancel">');
 			$txt = 	$Entidad->texto_actualizar();
 			$pagina->insertarCuerpo($txt);
 			$pagina->graficar_c_form($_SERVER['PHP_SELF']);
@@ -94,7 +94,7 @@
 		{
 			//
 			// Arma la impresion
-			$pagina=new Paginai('Laboratorio','<a href="imprimir.php?'.$Entidad->obtiene_prefijo_campo().'_Id='.$Entidad->id().'">Imprimir</a><input type="submit" value="Salir" name="okSalir">');
+			$pagina=new Paginai('LABORATORIO','<a href="imprimir.php?'.$Entidad->obtiene_prefijo_campo().'_Id='.$Entidad->id().'">Imprimir</a><input type="submit" value="Salir" name="okSalir">');
 			$pagina->sinborde();
 			$txt = 	$Entidad->texto_impresion();
 			$pagina->insertarCuerpo($txt);
@@ -104,7 +104,7 @@
 		{
 			//
 			// Arma la página
-			$pagina=new Paginai('Laboratorio','<input type="submit" value="Salir" name="okSalir">');
+			$pagina=new Paginai('LABORATORIO','<input type="submit" value="Salir" name="okSalir">');
 			$txt = 	$Entidad->texto_mostrar_abm();
 			$pagina->insertarCuerpo($txt);
 			$pagina->graficar_c_form($_SERVER['PHP_SELF']);
@@ -114,7 +114,7 @@
 		{
 			//
 			// Arma la página
-			$pagina=new Paginai('Laboratorio','<input type="submit" value="Grabar" name="okGrabaAgregar"><input type="submit" value="Salir" name="okSalir">');
+			$pagina=new Paginai('LABORATORIO','<input type="submit" value="Grabar" name="okGrabaAgregar"><input type="submit" value="Salir" name="okSalir">');
 			$txt = 	$Entidad->texto_agregar();
 			$pagina->insertarCuerpo($txt);
 			$pagina->graficar_c_form($_SERVER['PHP_SELF']);
@@ -127,7 +127,7 @@
 		}
 	function muestra_ok($texto)
 		{
-			$pagina=new Paginai('Laboratorio','<input type="submit" value="Ok" name="okMje">');
+			$pagina=new Paginai('LABORATORIO','<input type="submit" value="Ok" name="okMje">');
 			$txt = 	$texto ;
 			$pagina->insertarCuerpo($txt);
 			$pagina->graficar_c_form($_SERVER['PHP_SELF']);
@@ -136,7 +136,7 @@
 		{
 			//
 			// Arma la página
-			$pagina=new Paginai('Laboratorio','<input type="submit" value="Grabar" name="okGrabaAgregar"><input type="submit" value="Salir" name="okSalir">');
+			$pagina=new Paginai('LABORATORIO','<input type="submit" value="Grabar" name="okGrabaAgregar"><input type="submit" value="Salir" name="okSalir">');
 			$txt = 	$Entidad->textoError();
 			$pagina->insertarCuerpo($txt);
 			$pagina->graficar_c_form($_SERVER['PHP_SELF']);
